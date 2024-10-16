@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+*::selection {
+  background: #0000ff;
+}
+:root {
+  --bg-color: rgb(4, 78, 131);
+  --text-color: rgb(250, 249, 246);
+}
+/* Navbar */
+nav {
+  background-color: rgb(4, 78, 131);
+  height: 4.75rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav_link ul {
+  display: flex;
+  margin: 0 1.875rem;
+  padding: 0.4rem;
+}
+nav .nav_link li a {
+  margin: auto 0.75rem;
+  color: rgb(250, 249, 246);
+  font-weight: 400;
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 5rem;
+}
+.logo img {
+  width: 65%;
+  object-fit: cover;
+  object-position: center;
+}
+.heading_tag span {
+  font-size: 18px;
+  color: rgb(185, 216, 243);
+  font-weight: 800;
+  margin: 0 auto;
+  line-height: 27px;
+  font-family: "Roboto", sans-serif;
+}
+
+.fa-chevron-down {
+  font-size: 0.6875rem;
+  margin-left: 3px;
+  color: rgb(250, 249, 246);
+}
+.nav_link ul {
+  position: relative;
+}
+
+.drop-menu .dropMenu {
+  display: none;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  right: 0rem;
+  height: 70vh;
+  top: 2rem;
+  width: 105%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 1;
+}
+
+/* Show dropdown on hover */
+.nav_link li:hover .drop-menu .dropMenu {
+  display: block; /* Show dropdown when hovering over the list item */
+}
+
+/* .drop-menu .dropMenu {
+  display: block;
+  margin: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+} */
+.nav_link li:hover .drop-menu .dropMenu {
+  display: block; /* Show dropdown when hovering over the list item */
+}
+
+/* Change cursor style for dropdown */
+.drop-menu .dropMenu {
+  cursor: default; /* Change cursor style */
+}
+
+.drop-menu .dropMenu:hover {
+  display: none; /* Hide dropdown on hover */
+}
+.drop-menu ul li {
+  width: 200px;
+  padding: 10px;
+  color: black;
+}
+.drop-menu .dropMenu li a {
+  color: rgb(73, 72, 72);
+  display: inline-block;
+  width: 23rem;
+  text-align: left;
+  padding: 0.12rem 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s;
+  user-select: none;
+  cursor: pointer;
+
+}
+.drop-menu .dropMenu li a:hover {
+  color: rgb(4, 78, 131);
+}
+.dropMenu .line-row {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 1px;
+  background: lightgrey;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.drop-menu .dropMenu span {
+  color: rgb(39, 39, 42);
+  font-weight: 600;
+  font-size: 1.45rem;
+  padding: 20px;
+}
+.drop-menu .dropMenu span::selection {
+  color: #ffff;
+  font-weight: 700;
+}
