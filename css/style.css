@@ -119,7 +119,6 @@ nav .nav_link li a {
   transition: all 0.3s;
   user-select: none;
   cursor: pointer;
-
 }
 .drop-menu .dropMenu li a:hover {
   color: rgb(4, 78, 131);
@@ -143,4 +142,32 @@ nav .nav_link li a {
 .drop-menu .dropMenu span::selection {
   color: #ffff;
   font-weight: 700;
+}
+
+/* Hero Section */
+.hero-sec {
+  background-image: url("../images/governor-news.jpg");
+  background-size: cover;
+  background-position:left right;
+  height: 80vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+.hero-sec::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backdrop-filter: blur(2px);
+  background-color: rgba(255,255,255,0.5);
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .hero-sec {
+    height: 50vh; /* چھوٹی اسکرینز کے لئے اونچائی کو ایڈجسٹ کریں */
+    background-size: contain; /* بہتر نظر کے لئے سائز کو تبدیل کریں */
+  }
 }
